@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import Message from "./components/message";
-import Form from "./components/form";
-import Nav from './components/nav';
+import logo from "../logo.svg";
+import "../App.css";
+import Message from "./message";
+import Form from "./form";
 
-class App extends Component {
+class About extends Component {
   state = {
     name: this.props.name,
     message: this.props.message
@@ -23,16 +22,10 @@ class App extends Component {
     return (
 
       <div className="App">
-
-        <div >
-          <Nav />
-        </div>
-
-
-
+        <h1>This is abouts page </h1>
       </div >
     );
   }
 }
 
-export default App;
+export default About;
